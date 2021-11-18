@@ -62,16 +62,16 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback 
             Button btnCancelar = viewDialog.findViewById(R.id.btnCancelar);
             Button btnGuardar = viewDialog.findViewById(R.id.btnGuardar);
             CompoundButton tglAdmin = viewDialog.findViewById(R.id.tglAdmin);
-            Spinner slcRol = viewDialog.findViewById(R.id.slcRol);
+            Spinner spinnerRol = viewDialog.findViewById(R.id.slcRol);
+
             btnCancelar.setOnClickListener(listenerAgregarUsuario);
             btnGuardar.setOnClickListener(listenerAgregarUsuario);
             tglAdmin.setOnCheckedChangeListener(listenerAgregarUsuario);
-            slcRol.setOnItemSelectedListener(listenerAgregarUsuario);
+            spinnerRol.setOnItemSelectedListener(listenerAgregarUsuario);
 
             ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this, R.array.roles_array, android.R.layout.simple_spinner_item);
             adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            slcRol.setAdapter(adapterSpinner);
-
+            spinnerRol.setAdapter(adapterSpinner);
 
             DialogDefault dialog = new DialogDefault("Crear Usuario", null, null, null, null, viewDialog, null);
 
