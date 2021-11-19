@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:text="Nombre de user" />
+        android:text="Nombre de usuario" />
 
     <EditText
         android:id="@+id/inputUsername"
@@ -39,7 +39,8 @@
         <Spinner
             android:id="@+id/slcRol"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
 
@@ -56,6 +57,7 @@
 
         <ToggleButton
             android:id="@+id/tglAdmin"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -81,7 +83,7 @@
                 android:id="@+id/btnCancelar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cerrar"
+                android:text="Cancelar"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:backgroundTint="#FFFFFF"
                 android:textColor="#555555" />
